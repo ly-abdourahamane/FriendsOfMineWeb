@@ -1,0 +1,23 @@
+<h1>Création d'un utilisateur</h1>
+
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Nom" [(ngModel)]="utilisateur.nom" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Prenom" [(ngModel)]="utilisateur.prenom" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Email" [(ngModel)]="utilisateur.email" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="sexe" [(ngModel)]="utilisateur.sexe" required>
+  </mat-form-field>
+</div>
+
+<button mat-raised-button (click)="createUtilisateur()" color="primary">Ajouter</button>
+
+<div> {{utilisateur | json}}</div>
